@@ -1,0 +1,11 @@
+1) La classe ne respecte pas SRP car elle a deux responsabilités qui sont le calcul du salaire de l'employe et l'affichage de
+coordonées.Si elle respectait SRP, elle aiurait une seule responsabilité.
+
+2)Même si la méthode de calcul de salaire change, cela ne changera rien pour la classe car elle ne respecte pas la règle SRP.
+
+3)Si l'affichage est remplacée par le stockage dans un fichier CSV, il ne se passera rien pour la classe car elle ne respecte 
+pas la règle SRP.
+
+4)Pour que le SRP soit respecté, il faudrait crée deux classes.L'une serait appelé EmployeSalaire, elle aura pour responsabilité 
+le calcul du salaire.La seconde serait appelé EmployeCoordonnée, elle aura pour responsabilité l'affichage des coordonnées de 
+l'employé.
